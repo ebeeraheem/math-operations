@@ -48,6 +48,7 @@ legend {
   grid-template-columns: 115px 1fr;
   grid-template-rows: auto;
   row-gap: 0.5rem;
+  align-items: center;
 }
 
 form input {
@@ -57,6 +58,18 @@ form input {
   background-color: whitesmoke;
   border-radius: 3px;
   min-width: 0;
+  font-size: 1rem;
+}
+
+/* Hide default input number styles */
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 .buttons {
