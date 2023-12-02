@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  margin: auto;
+  min-height: 100dvh;
+  background-color: rgb(0, 112, 112);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 95%;
+  max-width: 600px;
+  background-color: rgb(172, 230, 220);
+  padding: 0.5em;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+    -5px -5px 15px rgba(255, 255, 255, 0.5);
+}
+
+main h1 {
+  text-align: center;
+}
+
+main p {
+  text-align: center;
+}
+fieldset {
+  padding: 1em;
+  margin: 0.5rem 2rem;
+}
+
+legend {
+  font-weight: 700;
+}
+
+.inputText {
+  display: grid;
+  grid-template-columns: 115px 1fr;
+  grid-template-rows: auto;
+  row-gap: 0.5rem;
+}
+
+form input {
+  outline: 0;
+  border: 1px solid gray;
+  padding: 6px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  min-width: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-block: 30px;
+}
+
+.buttons button {
+  flex: 1 1 90px;
+  background-color: rgb(0, 112, 112);
+  color: white;
+  border: 0;
+  outline: 0;
+  padding-block: 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: 2px;
+
+  &:hover {
+    font-weight: 700;
+    background-color: rgba(0, 112, 112, 0.801);
+  }
+}
+
+#result {
+  /* font-family: "Source Code Pro", sans-serif; */
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
